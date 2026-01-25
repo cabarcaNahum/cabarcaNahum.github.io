@@ -987,4 +987,9 @@ img {
   .footer-links .footer-link {
     margin-left: var(--mb-1);
   }
+  /* Center the last skill section (Languages) when alone on a row */
+.skills-container > .skills-container-content:last-child {
+    justify-self: center;
+}
+
 }/*# sourceMappingURL=styles.css.map */
