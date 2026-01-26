@@ -80,6 +80,9 @@ const swiperArticles = new Swiper(".articles-container", {
     el: ".swiper-pagination",
     clickable: true,
   },
+    /* IMPORTANT FIX */
+  preventClicks: false,
+  preventClicksPropagation: false,
 })
 
 
