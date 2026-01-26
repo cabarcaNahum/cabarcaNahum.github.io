@@ -555,39 +555,99 @@ img {
   transform: translate(6px, -7px);
 }
 
-/* Articles section */
+/* =========================
+   Articles section (UPDATED to match Skills accordion behavior)
+   Paste this entire block in styles.css (replace your current Articles section block)
+   ========================= */
+
 .articles-container {
   overflow: initial;
 }
+
 .articles-container .articles-content {
   padding: 0 1.5rem;
 }
-.articles-container .articles-content .articles-img {
+
+/* IMPORTANT: your HTML uses class="article-img" (singular), so style that */
+.articles-container .articles-content .article-img {
   width: 265px;
   border-radius: 0.5rem;
   justify-self: center;
 }
+
 .articles-container .articles-content .articles-title {
   margin-bottom: var(--mb-0-5);
   font-size: var(--h3-font-size);
 }
+
 .articles-container .articles-content .articles-description {
   margin-bottom: var(--mb-0-75);
 }
+
+/* Keep your hover behavior */
 .articles-container .articles-content .articles-button:hover .button-icon {
   transform: translateX(0.45rem);
 }
+
+/* ===== Accordion dropdown (matches Skills) ===== */
+
+/* Closed state */
+.articles-container .articles-content .articles-details {
+  height: 0;
+  overflow: hidden;
+}
+
+/* Open state */
+.articles-container .articles-content.articles-open .articles-details {
+  height: max-content;
+  margin-top: var(--mb-1);
+}
+
+/* Arrow animation like Skills */
+.articles-container .articles-content .articles-arrow {
+  transition: 0.4s;
+}
+
+.articles-container .articles-content.articles-open .articles-arrow {
+  transform: rotate(-180deg);
+}
+
+/* Dropdown text styling */
+.articles-container .articles-content .articles-long {
+  line-height: 1.6;
+  margin: 0 0 var(--mb-1) 0;
+}
+
+/* Optional: dropdown image grid (only matters if you add images inside details) */
+.articles-container .articles-content .articles-details-media {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: var(--mb-1);
+}
+
+.articles-container .articles-content .articles-detail-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+/* ===== Swiper controls (keep as you had) ===== */
 .articles-container .swiper-button-prev::after,
 .articles-container .swiper-button-next::after {
   content: "";
 }
+
 .articles-container .swiper-articles-icon {
   color: var(--first-color);
   font-size: 2rem;
 }
+
 .articles-container .swiper-button-next {
   right: -0.5rem;
 }
+
 .articles-container .swiper-button-prev {
   left: -0.5rem;
 }
@@ -605,6 +665,7 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
+
 
 /* Contact section */
 .contact-container {
