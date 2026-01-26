@@ -452,45 +452,96 @@
             </div>
         </section>
 
-        <!-- Articles section -->
-        <section class="articles section" id="articles">
-            <h2 class="section-title">Projects</h2>
-            <span class="section-subtitle">Most recent work</span>
+   <!-- Articles section (Projects) — expands like Skills, no external links -->
+<section class="articles section" id="articles">
+  <h2 class="section-title">Projects</h2>
+  <span class="section-subtitle">Most recent work</span>
 
-            <div class="articles-container container swiper-container">
-                <div class="swiper-wrapper">
-                    <!-- Articles section: first element -->
-                    <div class="articles-content grid swiper-slide">
-                        <img src="img/article-1.png" alt="Articles" class="article-img">
-                        <div class="articles-data">
-                            <h3 class="articles-title">Creating Anti‐Biofouling Surfaces by Degradable Main‐chain Polyphosphoester Polymer Brushes</h3>
-                            <p class="articles-description">Advanced Functional Materials | 2024, April</p>
-                            <a href="https://onlinelibrary.wiley.com/doi/10.1002/adfm.202316201" class="button button-flex button-small articles-button">
-                                Read <i class="fas fa-arrow-right button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- Articles section: second element -->
-                    <div class="articles-content grid swiper-slide">
-                        <img src="img/article-2.png" alt="Articles" class="article-img">
-                        <div class="articles-data">
-                            <h3 class="articles-title">On the Road to Circular Polymer Brushes: Challenges and Prospects</h3>
-                            <p class="articles-description">Langmuir | 2024, April</p>
-                            <a href="https://pubs.acs.org/doi/epdf/10.1021/acs.langmuir.3c03683" class="button button-flex button-small articles-button">
-                                Read <i class="fas fa-arrow-right button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-button-next">
-                    <i class="fas fa-angle-right swiper-articles-icon"></i>
-                </div>
-                <div class="swiper-button-prev">
-                    <i class="fas fa-angle-left swiper-articles-icon"></i>
-                </div>
-                <div class="swiper-pagination"></div>
+  <div class="articles-container container swiper-container">
+    <div class="swiper-wrapper">
+
+      <!-- Project 1 -->
+      <div class="articles-content grid swiper-slide articles-close">
+        <img src="img/article-1.png" alt="Project" class="article-img">
+
+        <div class="articles-data">
+          <h3 class="articles-title">
+            Creating Anti‐Biofouling Surfaces by Degradable Main‐chain Polyphosphoester Polymer Brushes
+          </h3>
+
+          <p class="articles-description">Advanced Functional Materials | 2024, April</p>
+
+          <!-- Read toggle -->
+          <a href="#"
+             class="button button-flex button-small articles-button articles-toggle">
+            Read <i class="fas fa-angle-down button-icon articles-arrow"></i>
+          </a>
+
+          <!-- Dropdown content -->
+          <div class="articles-details">
+            <p class="articles-long">
+              Write your expanded project explanation here. Describe what you designed, analyzed, fabricated, or tested.
+              Mention your role, tools used, and what improved after iteration.
+            </p>
+
+            <!-- Optional images (uncomment when ready) -->
+            <!--
+            <div class="articles-details-media">
+              <img src="img/project1-detail-1.png" alt="Project 1 detail image 1" class="articles-detail-img">
+              <img src="img/project1-detail-2.png" alt="Project 1 detail image 2" class="articles-detail-img">
             </div>
-        </section>
+            -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="articles-content grid swiper-slide articles-close">
+        <img src="img/article-2.png" alt="Project" class="article-img">
+
+        <div class="articles-data">
+          <h3 class="articles-title">
+            On the Road to Circular Polymer Brushes: Challenges and Prospects
+          </h3>
+
+          <p class="articles-description">Langmuir | 2024, April</p>
+
+          <!-- Read toggle -->
+          <a href="#"
+             class="button button-flex button-small articles-button articles-toggle">
+            Read <i class="fas fa-angle-down button-icon articles-arrow"></i>
+          </a>
+
+          <!-- Dropdown content -->
+          <div class="articles-details">
+            <p class="articles-long">
+              Write your expanded project explanation here. Include scope, modeling, experiments, or conclusions you
+              contributed and any measurable results.
+            </p>
+
+            <!-- Optional images -->
+            <!--
+            <div class="articles-details-media">
+              <img src="img/project2-detail-1.png" alt="Project 2 detail image 1" class="articles-detail-img">
+              <img src="img/project2-detail-2.png" alt="Project 2 detail image 2" class="articles-detail-img">
+            </div>
+            -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="swiper-button-next">
+      <i class="fas fa-angle-right swiper-articles-icon"></i>
+    </div>
+    <div class="swiper-button-prev">
+      <i class="fas fa-angle-left swiper-articles-icon"></i>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
 
        <!-- Contact section -->
         <section class="contact section" id="contact">
