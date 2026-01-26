@@ -65,7 +65,10 @@ tabs.forEach((tab) => {
   })
 })
 
-/* Articles swiper */
+/* =========================
+   Articles swiper
+   ========================= */
+
 const swiperArticles = new Swiper(".articles-container", {
   cssMode: true,
   loop: true,
@@ -78,6 +81,49 @@ const swiperArticles = new Swiper(".articles-container", {
     clickable: true,
   },
 })
+
+
+
+/* =========================
+   Projects accordion (Articles) — emulates Skills behavior
+   ========================= */
+
+const articlesToggles = document.querySelectorAll(".articles-toggle")
+const articlesSlides = document.querySelectorAll(".articles-content")
+
+function toggleArticles(e) {
+  e.preventDefault() // stop <a href="#"> from navigating
+
+  const slide = this.closest(".articles-content")
+  const itemClass = slide.className
+
+  // Close all slides (same logic as Skills)
+  articlesSlides.forEach((s) => {
+    s.className = "articles-content grid swiper-slide"
+  })
+
+  // Open clicked slide if it was closed
+  if (itemClass === "articles-content grid swiper-slide") {
+    slide.className = "articles-content grid swiper-slide articles-open"
+  }
+}
+
+articlesToggles.forEach((el) => {
+  el.addEventListener("click", toggleArticles)
+})
+
+
+
+/* =========================
+   Auto-close dropdown when changing slides (VERY IMPORTANT with Swiper)
+   ========================= */
+
+swiperArticles.on("slideChange", () => {
+  articlesSlides.forEach((s) => {
+    s.className = "articles-content grid swiper-slide"
+  })
+})
+
 
 /* Scroll sections (active link) */
 const sections = document.querySelectorAll("section[id]")
