@@ -1042,10 +1042,10 @@ img {
     font-size: 3rem !important;
   }
   .swiper-button-prev {
-    left: -.25rem !important;
+    left: -.10rem !important;
   }
   .swiper-button-next {
-    right: -.25rem !important;
+    right: -.10rem !important;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
