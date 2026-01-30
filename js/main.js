@@ -87,6 +87,8 @@ tabs.forEach((tab) => {
   mousewheel: false,
 })
 
+
+/*
    Projects accordion (Articles)
    ========================= */
 
