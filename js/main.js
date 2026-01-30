@@ -71,21 +71,13 @@ tabs.forEach((tab) => {
 
 const swiperArticles = new Swiper(".articles-container", {
   loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-
-  /* Disable swipe / scroll navigation */
+  slidesPerView: 1,
+  navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
+  pagination: { el: ".swiper-pagination", clickable: true },
   allowTouchMove: false,
   simulateTouch: false,
 })
+
 
 
 /* =========================
