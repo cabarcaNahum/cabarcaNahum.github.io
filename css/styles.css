@@ -559,8 +559,16 @@ img {
    Articles section (UPDATED to match Skills accordion behavior)
    Paste this entire block in styles.css (replace your current Articles section block)
    ========================= */
+/* Do NOT clip the whole section */
 .articles-container {
-  overflow: initial;
+  overflow: visible;
+}
+
+/* Clip only the swiper area */
+.articles-container .swiper,
+.articles-container .swiper-container {
+  position: relative;
+  overflow: hidden;
 }
 
 .articles-container .articles-content {
