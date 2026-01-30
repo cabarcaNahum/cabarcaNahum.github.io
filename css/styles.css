@@ -563,11 +563,6 @@ img {
   overflow: initial;
 }
 
-.articles-container {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .articles-container .articles-content {
   padding: 0 1.5rem;
 }
