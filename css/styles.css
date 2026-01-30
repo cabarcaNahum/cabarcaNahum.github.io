@@ -564,12 +564,6 @@ img {
   overflow: hidden;
 }
 
-.articles-container {
-  position: relative;
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
-
 .articles-container .articles-content {
   padding: 0 1.5rem;
 }
@@ -1037,10 +1031,10 @@ img {
     font-size: 3rem !important;
   }
   .swiper-button-prev {
-    left: 1rem !important;
+    left: 1.5rem !important;
   }
   .swiper-button-next {
-    right: 1rem !important;
+    right: 1.5rem !important;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
