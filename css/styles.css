@@ -600,14 +600,15 @@ img {
 
 /* Open */
 .articles-container .articles-content.articles-open .articles-details {
-  max-height: 420px;                 /* adjust if needed */
-  overflow-y: auto;
+  max-height: 420px;              /* adjust if needed */
+  overflow-y: auto;               /* keep */
+  overflow-x: hidden;             /* add */
   margin-top: var(--mb-1);
 
-  /* prevents scroll chaining to swiper/page on trackpads */
-  overscroll-behavior: contain;
-  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;   /* keep */
+  -webkit-overflow-scrolling: touch; /* keep */
 }
+
 
 /* Arrow animation */
 .articles-container .articles-content .articles-arrow {
