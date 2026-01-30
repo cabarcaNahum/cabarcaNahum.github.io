@@ -1060,5 +1060,26 @@ img {
 .skills-container > .skills-container-content:last-child {
     justify-self: center;
 }
+/* === Swiper arrows positioned close to project edges === */
+.articles-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.articles-container .swiper-button-prev,
+.articles-container .swiper-button-next {
+  z-index: 20;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.articles-container .swiper-button-prev {
+  left: 12%;
+}
+
+.articles-container .swiper-button-next {
+  right: 12%;
+}
+
 
 }/*# sourceMappingURL=styles.css.map */
