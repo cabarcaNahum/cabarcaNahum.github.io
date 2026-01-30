@@ -561,7 +561,7 @@ img {
    ========================= */
 
 .articles-container {
-  overflow: hidden;
+  overflow: initial;
 }
 
 .articles-container .articles-content {
