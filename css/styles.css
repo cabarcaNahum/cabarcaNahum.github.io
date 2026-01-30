@@ -560,6 +560,10 @@ img {
    Paste this entire block in styles.css (replace your current Articles section block)
    ========================= */
 .articles-container {
+  overflow: initial;
+}
+
+.articles-container {
   padding-left: 4rem;
   padding-right: 4rem;
 }
