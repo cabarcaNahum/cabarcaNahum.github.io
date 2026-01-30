@@ -70,6 +70,8 @@ tabs.forEach((tab) => {
    ========================= */
 const swiperArticles = new Swiper(".articles-container", {
   loop: true,
+  slidesPerView: 1,
+  spaceBetween: 0,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
