@@ -66,65 +66,69 @@ tabs.forEach((tab) => {
 })
 
 /* =========================
-   Articles swiper
+   Articles swiper (buttons only)
    ========================= */
 
 const swiperArticles = new Swiper(".articles-container", {
-  cssMode: true,
   loop: true,
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-    /* IMPORTANT FIX */
-  preventClicks: false,
-  preventClicksPropagation: false,
+
+  /* Disable swipe / scroll navigation */
+  allowTouchMove: false,
+  simulateTouch: false,
 })
 
 
-
 /* =========================
-   Projects accordion (Articles) — emulates Skills behavior
+   Projects accordion (Articles)
    ========================= */
 
 const articlesToggles = document.querySelectorAll(".articles-toggle")
 const articlesSlides = document.querySelectorAll(".articles-content")
 
+function closeAllArticles() {
+  articlesSlides.forEach((slide) => {
+    slide.classList.remove("articles-open")
+    slide.classList.add("articles-close")
+  })
+}
+
 function toggleArticles(e) {
-  e.preventDefault() // stop <a href="#"> from navigating
+  e.preventDefault()
+  e.stopPropagation()
+  if (e.stopImmediatePropagation) e.stopImmediatePropagation()
 
   const slide = this.closest(".articles-content")
-  const itemClass = slide.className
+  const wasOpen = slide.classList.contains("articles-open")
 
-  // Close all slides (same logic as Skills)
-  articlesSlides.forEach((s) => {
-    s.className = "articles-content grid swiper-slide"
-  })
+  closeAllArticles()
 
-  // Open clicked slide if it was closed
-  if (itemClass === "articles-content grid swiper-slide") {
-    slide.className = "articles-content grid swiper-slide articles-open"
+  if (!wasOpen) {
+    slide.classList.remove("articles-close")
+    slide.classList.add("articles-open")
   }
 }
 
 articlesToggles.forEach((el) => {
-  el.addEventListener("click", toggleArticles)
+  el.addEventListener("click", toggleArticles, true)
 })
 
 
-
 /* =========================
-   Auto-close dropdown when changing slides (VERY IMPORTANT with Swiper)
+   Auto-close dropdown on slide change
    ========================= */
 
 swiperArticles.on("slideChange", () => {
-  articlesSlides.forEach((s) => {
-    s.className = "articles-content grid swiper-slide"
-  })
+  closeAllArticles()
 })
 
 
