@@ -589,21 +589,27 @@ img {
   transform: translateX(0.45rem);
 }
 
-/* ===== Accordion dropdown (matches Skills) ===== */
+/* ==== Articles dropdown (scroll-safe, swiper-safe) ==== */
 
-/* Closed state */
+/* Closed */
 .articles-container .articles-content .articles-details {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.35s ease;
 }
 
-/* Open state */
+/* Open */
 .articles-container .articles-content.articles-open .articles-details {
-  height: max-content;
+  max-height: 420px;                 /* adjust if needed */
+  overflow-y: auto;
   margin-top: var(--mb-1);
+
+  /* prevents scroll chaining to swiper/page on trackpads */
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
 }
 
-/* Arrow animation like Skills */
+/* Arrow animation */
 .articles-container .articles-content .articles-arrow {
   transition: 0.4s;
 }
@@ -612,13 +618,13 @@ img {
   transform: rotate(-180deg);
 }
 
-/* Dropdown text styling */
+/* Dropdown text */
 .articles-container .articles-content .articles-long {
   line-height: 1.6;
-  margin: 0 0 var(--mb-1) 0;
+  margin-bottom: var(--mb-1);
 }
 
-/* Optional: dropdown image grid (only matters if you add images inside details) */
+/* Optional image grid */
 .articles-container .articles-content .articles-details-media {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -626,6 +632,7 @@ img {
   margin-bottom: var(--mb-1);
 }
 
+/* Optional images */
 .articles-container .articles-content .articles-detail-img {
   width: 100%;
   height: auto;
@@ -665,7 +672,6 @@ img {
 .swiper-pagination-bullet {
   outline: none;
 }
-
 
 /* Contact section */
 .contact-container {
