@@ -673,12 +673,6 @@ img {
 .swiper-pagination-bullet {
   outline: none;
   
-  .articles-container .swiper-button-prev,
-.articles-container .swiper-button-next {
-  background: rgba(255,0,0,0.25) !important;
-  outline: 3px solid red !important;
-}
-
 }
 
 /* Contact section */
@@ -1036,10 +1030,10 @@ img {
     font-size: 3rem !important;
   }
   .swiper-button-prev {
-    left: -3.5rem !important;
+    left: 1rem !important;
   }
   .swiper-button-next {
-    right: -3.5rem !important;
+    right: 1rem !important;
   }
   .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: -4.5rem;
