@@ -559,11 +559,6 @@ img {
    Articles section (UPDATED to match Skills accordion behavior)
    Paste this entire block in styles.css (replace your current Articles section block)
    ========================= */
-
-.articles-container {
-  overflow: initial;
-}
-
 .articles-container {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -659,11 +654,11 @@ img {
 }
 
 .articles-container .swiper-button-next {
-  right: 0.5rem;
+  right: 4rem;
 }
 
 .articles-container .swiper-button-prev {
-  left: 0.5rem;
+  left: 4rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
