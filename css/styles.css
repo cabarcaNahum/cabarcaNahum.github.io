@@ -562,6 +562,12 @@ img {
 
 .articles-container {
   overflow: hidden;
+  position: relative;
+}
+
+.articles-container {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .articles-container .articles-content {
