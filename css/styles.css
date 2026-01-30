@@ -665,11 +665,11 @@ img {
 }
 
 .articles-container .swiper-button-next {
-  right: 25rem;
+  right: -3rem;
 }
 
 .articles-container .swiper-button-prev {
-  left: 25rem;
+  left: -3rem;
 }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
