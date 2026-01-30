@@ -68,17 +68,19 @@ tabs.forEach((tab) => {
 /* =========================
    Articles swiper (buttons only)
    ========================= */
-
 const swiperArticles = new Swiper(".articles-container", {
   loop: true,
-  slidesPerView: 1,
-  navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" },
-  pagination: { el: ".swiper-pagination", clickable: true },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   allowTouchMove: false,
   simulateTouch: false,
 })
-
-
 
 /* =========================
    Projects accordion (Articles)
