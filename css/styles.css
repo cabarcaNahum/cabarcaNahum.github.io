@@ -561,15 +561,9 @@ img {
    ========================= */
 /* Do NOT clip the whole section */
 .articles-container {
-  overflow: visible;
-}
-
-/* Clip only the swiper area */
-.articles-container .swiper,
-.articles-container .swiper-container {
-  position: relative;
   overflow: hidden;
 }
+
 
 .articles-container .articles-content {
   padding: 0 1.5rem;
