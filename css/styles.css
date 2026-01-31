@@ -639,7 +639,7 @@ img {
 /* Replace ONLY your articles-details-media block with this to auto-arrange images (2 or 3+ looks clean) */
 .articles-container .articles-content .articles-details-media {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  grid-template-columns: 1fr;
   gap: 0.75rem;
   margin-bottom: var(--mb-1);
 }
