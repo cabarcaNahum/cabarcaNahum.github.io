@@ -229,11 +229,11 @@ img {
   padding-top: 1.5rem;
 }
 .home-container .home-content .home-img .home-blob {
-  width: 200px;
+  width: 500px;
   fill: var(--first-color);
 }
 .home-container .home-content .home-img .home-blob-img {
-  width: 170px;
+  width: 300px;
 }
 .home-container .home-content .home-social {
   display: grid;
