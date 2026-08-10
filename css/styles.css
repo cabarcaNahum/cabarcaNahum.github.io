@@ -599,7 +599,18 @@ img {
 .articles-container .articles-content .articles-button:hover .button-icon {
   transform: translateX(0.45rem);
 }
+.articles-youtube {
+  display: inline-flex;
+  align-items: center;
+  margin-left: var(--mb-0-75);
+  color: var(--first-color);
+  font-size: 1.25rem;
+  vertical-align: middle;
+}
 
+.articles-youtube:hover {
+  color: var(--first-color-alt);
+}
 /* ==== Articles dropdown (scroll-safe, swiper-safe) ==== */
 
 /* Closed */
