@@ -415,7 +415,6 @@
    <!-- Articles section (Projects) — expands like Skills, no external links -->
 <section class="articles section" id="articles">
   <h2 class="section-title">Projects</h2>
-  <span class="section-subtitle">Most recent work</span>
 
   <div class="articles-container container swiper-container">
     <div class="swiper-wrapper">
@@ -476,9 +475,10 @@
 
           <div class="articles-details">
             <p class="articles-long">
-              First-pass prototype: a triangular, three-wheel robot built on a breadboard and powered by 3x AAA
-              batteries. Used three distance sensors to scan for obstacles and drive away from a cat's approach.
-              Served as a proof of concept before a full redesign focused on size, power, and reliability.
+            A toy for cats designed to evade pursuit, powered by three 6V DC motors driving three omniwheels.
+            Built on a breadboard with separate 4× AAA battery packs for the Arduino and motors. Three short-range 
+            IR proximity sensors detect the cat's approach, directing the robot to move in the opposite direction. 
+            Developed the sensor-based navigation and motor-control system in Arduino.
             </p>
 
             <div class="articles-details-media">
@@ -506,10 +506,14 @@
 
           <div class="articles-details">
             <p class="articles-long">
-              Full redesign into a compact, mouse-shaped two-wheel robot, moving from breadboard to a custom
-              Arduino shield PCB with dual buck converters regulating a rechargeable LiPo battery down to motor
-              and logic/sensor voltages. Reduced to two distance sensors and a fully enclosed 3D-printed shell,
-              hand-fit in Fusion 360 to house all components in a smaller footprint than V1.
+            Full redesign into a compact, mouse-shaped two-wheel robot with 
+            two motorized drive wheels and a passive front caster wheel. 
+            Replaced the breadboard with a custom Arduino shield PCB and 
+            dual buck converters, regulating an 11V rechargeable LiPo battery
+            into 5V and 6V rails for the Arduino and sensors, and motors and 
+            motor driver, respectively. Reduced sensing to two distance sensors 
+            positioned at the front and rear, and designed a fully enclosed 3D-printed 
+            shell in Fusion 360 to hand-fit all components into a smaller, more compact footprint than V1.
             </p>
 
             <div class="articles-details-media">
